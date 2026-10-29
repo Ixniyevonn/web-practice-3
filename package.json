@@ -1,0 +1,24 @@
+{
+	"name": "valley-of-silent-toll",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"build:pages": "cross-env BASE_PATH=/web-practice-3 vite build",
+		"preview": "vite preview",
+		"preview:pages": "node scripts/serve-pages.mjs",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/kit": "^2.70.2",
+		"@sveltejs/vite-plugin-svelte": "7.2.0",
+		"cross-env": "^10.1.0",
+		"svelte": "^5.56.8",
+		"svelte-check": "^4.7.4",
+		"typescript": "^5.9.3",
+		"vite": "^8.2.0"
+	}
+}
